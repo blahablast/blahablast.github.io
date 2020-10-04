@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+// button {
+//   display: inline-block;
+//   padding: 0.8rem 2rem;
+//   transition: all 0.5s;
+//   border: none;
+//   cursor: pointer;
+// }
+
 body {
   font-family: "Raleway", sans-serif;
   line-height: 1.6;
@@ -22,17 +30,67 @@ img {
   width: 100%;
 }
 
+h2 {
+  text-align: center;
+}
+
+.container {
+  max-width: 1280px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+
 .header-home {
-  background: url("img/joan-gamell-ZS67i1HLllo-unsplash.jpg") no-repeat center
-    right / cover;
+  background: url("img/joan-gamell-ZS67i1HLllo-unsplash.jpg") no-repeat right /
+    cover;
   color: #fff;
   height: 100vh;
+  position: relative;
+}
+
+.header-home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.header-home * {
+  z-index: 8;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  //text-align: center justify;
+  padding-top: 20%;
+}
+
+.header-content h1 {
+  font-size: 6rem;
+  font-weight: 300;
+}
+
+.lead-1 {
+  font-size: 2rem;
+  margin-bottom: -2rem;
+}
+
+.lead-2 {
+  font-size: 2rem;
+  margin-top: -1.5rem;
 }
 
 .main-nav {
   display: flex;
   justify-content: space-between;
   padding-top: 1rem;
+  //position: fixed;
+  top: 0px;
 }
 
 .main-nav ul {
@@ -48,6 +106,7 @@ img {
   border-bottom: 3px transparent solid;
   padding-bottom: 0.5rem;
   transition: border-color 0.5s;
+  font-size: 1.3rem;
 }
 
 .main-nav ul li a:hover {
@@ -60,9 +119,11 @@ img {
   font-size: 40px;
 }
 
-.container {
-  max-width: 1280px;
-  padding: 0 1.5rem;
-  margin: auto;
-  overflow: hidden;
+#work {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.work-card {
+  text-align: center;
 }
