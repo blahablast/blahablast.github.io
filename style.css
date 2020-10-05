@@ -4,18 +4,11 @@
   box-sizing: border-box;
 }
 
-// button {
-//   display: inline-block;
-//   padding: 0.8rem 2rem;
-//   transition: all 0.5s;
-//   border: none;
-//   cursor: pointer;
-// }
-
 body {
   font-family: "Raleway", sans-serif;
   line-height: 1.6;
   font-weight: 400;
+  background-color: #d4b996ff;
 }
 
 a {
@@ -42,7 +35,7 @@ h2 {
 }
 
 .header-home {
-  background: url("img/joan-gamell-ZS67i1HLllo-unsplash.jpg") no-repeat right /
+  background: url("img/nathan-dumlao-KixfBEdyp64-unsplash.jpg") no-repeat right /
     cover;
   color: #fff;
   height: 100vh;
@@ -56,7 +49,7 @@ h2 {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(180, 150, 124, 0.4);
 }
 
 .header-home * {
@@ -66,7 +59,6 @@ h2 {
 .header-content {
   display: flex;
   flex-direction: column;
-  //text-align: center justify;
   padding-top: 20%;
 }
 
@@ -110,7 +102,7 @@ h2 {
 }
 
 .main-nav ul li a:hover {
-  border-color: turquoise;
+  border-color: #fff;
 }
 
 .logo {
@@ -122,8 +114,129 @@ h2 {
 #work {
   display: flex;
   justify-content: space-evenly;
+  max-width: 1280px;
+  margin: 3rem auto;
+  padding: 10rem 0;
 }
 
 .work-card {
   text-align: center;
+  width: 20rem;
+  margin: 20px auto;
+  box-shadow: 0 5px 12px 2px rgba(0, 0, 0, 0.2);
+  background-color: rgb(180, 150, 124);
+}
+
+.work-card h3 {
+  color: #fff;
+}
+
+.work-card i {
+  font-size: 3rem;
+  padding: 1.4rem;
+  margin: 1rem auto;
+  background-color: #d4b996ff;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.work-card p {
+  margin: 1rem auto;
+  color: white;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #d4b996ff;
+  color: #fff;
+  padding: 0.8rem 4rem;
+  border-radius: 2px;
+  transition: all 0.5s;
+  margin: 1.5rem auto;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+#about {
+  background: linear-gradient(
+    to bottom,
+    rgb(228, 199, 161),
+    rgb(196, 171, 138)
+  );
+}
+
+.flex-columns .row {
+  display: flex;
+  width: 75%;
+  margin: auto;
+  padding: 12rem 0;
+}
+
+.flex-columns .column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.flex-columns .column .column-1,
+.flex-columns .column .column-2 {
+  height: 100%;
+}
+
+.flex-columns img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flex-columns .column-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 30px;
+  background-color: rgb(180, 150, 124);
+  color: #fff;
+}
+
+.flex-columns h2 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.flex-columns h4 {
+  margin-bottom: 10px;
+  font-weight: 300;
+  font-size: 1.3rem;
+}
+
+.flex-columns p {
+  margin: 20px 0;
+  font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(150, 124, 102);
+  align-items: center;
+  justify-content: center;
+  height: 8rem;
+}
+
+footer i {
+  font-size: 3rem;
+  padding-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 1.2rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  color: #d4b996ff;
+}
+
+footer p {
+  color: #fff;
 }
